@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.5.1)
 project(python-blosc)
 find_package(PythonExtensions REQUIRED)
 
