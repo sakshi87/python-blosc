@@ -35,12 +35,12 @@ before_install:
   - ulimit -a
   - python -V
   - if [[ "${TRAVIS_CPU_ARCH}" == "arm64" ]]; then
-      wget https://github.com/Kitware/CMake/releases/download/v3.11.0/cmake-3.11.0.tar.gz
-      tar -xvf cmake-3.11.0.tar.gz
-      cd cmake-3.11.0
-      ./bootstrap
-      make
-      make install
+      wget https://github.com/Kitware/CMake/releases/download/v3.11.0/cmake-3.11.0.tar.gz;
+      tar -xvf cmake-3.11.0.tar.gz;
+      cd cmake-3.11.0;
+      ./bootstrap;
+      make;
+      make install;
   - pip install -q numpy psutil
   - pip install -r requirements-dev.txt
 install:
