@@ -41,6 +41,7 @@ before_install:
       ./bootstrap;
       make;
       make install;
+    fi;
   - pip install -q numpy psutil
   - pip install -r requirements-dev.txt
 install:
