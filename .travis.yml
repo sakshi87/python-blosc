@@ -40,7 +40,7 @@ before_install:
       cd cmake-3.11.0;
       ./bootstrap;
       make;
-      make install;
+      sudo make install;
     fi;
   - pip install -q numpy psutil
   - pip install -r requirements-dev.txt
