@@ -41,8 +41,8 @@ before_install:
       ./bootstrap;
       make;
       sudo make install;
-      sudo pip install -q numpy psutil;
-      sudo pip install -r requirements-dev.txt;
+      pip install -q --user numpy psutil;
+      pip install -r --user requirements-dev.txt;
     fi;
   - pip install -q numpy psutil
   - pip install -r requirements-dev.txt
